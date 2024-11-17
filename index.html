@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<!-- <link rel="stylesheet" href="normalize.css"> -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Portfolio</title>
+</head>
+<body>
+  <div class="container">
+      <div class="header">
+        <div class="logo">
+           N<span>oman.</span>
+        </div>
+        <div class="navbar">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#"id="about">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#" id="blog">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <button class="talk_btn" onclick="talkForm()">Let's Talk</button>
+      </div>
+      <br><br><br><br><br><br>
+      <div class="section">
+        <div class="left">
+          <div class="content">
+            <div class="section_content">
+              <h1><span>Hi, I'm</span> Noman Hussain</h1>
+              <h2>Frontend Developer</h2>
+              <p>Hi, I'm a frontend developer skilled in HTML and CSS, specializing in creating clean, responsive websites. While I’m still growing my JavaScript skills, I'm committed to enhancing my abilities to build dynamic, interactive web experiences.
+              </p>
+            </div>
+            <div class="buttons">
+              <button class="hire_btn">Hire Me</button>
+              <button class="projects">See Projects</button>
+            </div>
+          </div>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/noman-hussain-244bb525a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BKNMSFrRoQWKPzKYXeK56Iw%3D%3D"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="about_left">
+          <h1>Noman Hussain</h1>
+          <p>Hi, I’m Noman Hussain, a passionate Frontend Developer with a strong foundation in HTML, CSS, and JavaScript. I specialize in creating clean, responsive websites that provide users with seamless experiences.
+            <br>
+            I’m also proficient in C and have basic knowledge of Python, which has given me a solid understanding of programming logic and problem-solving. Currently, I’m expanding my skill set by learning Node.js to enhance my backend development capabilities.</p>
+        </div>
+        <div class="blog_section">
+          <h1>Blog</h1>
+          <div>Hi! I’m Noman Hussain, a frontend developer currently in my third year at ABES Engineering College. I’ve been passionate about web development from the start, and my journey began in the first year of college when I first learned HTML and CSS. These two technologies fascinated me, and I spent my second year honing my skills, building small websites and web pages as I learned more about design and user experience.
+            <br><br>
+            As I continued my studies, I started diving into JavaScript, which gave me the ability to add dynamic functionality to my websites. Although I'm still at the beginning stages of mastering JavaScript, I’m excited about what I can create with it and eager to improve my skills through hands-on practice.
+            <br><br>
+            Currently, I’m expanding my knowledge by learning Node.js, a JavaScript runtime that allows me to work on the server side. I believe that learning Node.js will give me the ability to create full-stack applications and explore the world of backend development, which complements my frontend skills.
+            <br><br>
+            I’m always excited to learn new things and work on real-world projects. As a student at ABES Engineering College, I am continuously challenging myself to improve my coding skills and develop web applications that are not only functional but also clean and user-friendly.</div>
+        </div>
+        <div class="right">
+          <img src="right.png" alt="">
+        </div>
+      </div>
+      <div id="loginOverlay" class="overlay"></div>
+  </div>
+  <div class="talk_form">
+    <div class="talk_form_content">
+      <h1>Let's Talk</h1>
+      <form action="">
+        <input type="text" placeholder="Name" class="name">
+        <input type="email" placeholder="Email" class="email">
+        <input type="text" placeholder="Subject" class="subject">
+        <!-- <input type="text" placeholder="Message" class="message"> -->
+        <textarea name="" id="" cols="30" rows="5" placeholder="Message" class="message"></textarea>
+        <button class="submit_btn">Submit</button>
+        <button class="close_btn" onclick="closeForm()">Close</button>
+      </form>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
