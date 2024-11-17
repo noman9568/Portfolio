@@ -60,6 +60,7 @@ li a:hover {
 .talk_btn:hover{
   background-color: rgb(210, 209, 209);
   color: #7d2ae8;
+  border: 3px solid #7d2ae8;
 }
 .section{
   width: 80%;
@@ -132,7 +133,7 @@ li a:hover {
   background-color: rgb(210, 209, 209);
   border: 3px solid #7d2ae8;
   color: #7d2ae8;
-  transform: scale(1.05);
+  transform: scale(1.04);
 }
 .projects{
   background-color: rgb(210, 209, 209);
@@ -148,7 +149,7 @@ li a:hover {
 .projects:hover{
   background-color: #7d2ae8;
   color: white;
-  transform: scale(1.05);
+  transform: scale(1.04);
 }
 .right img {
   width: 100%;
@@ -287,7 +288,7 @@ li a:hover {
 .submit_btn:hover{
   background-color: #7d2ae8;
   color: white;
-  transform: scale(1.03);
+  transform: scale(1.05);
 }
 .close_btn{
   background-color: #7d2ae8;
@@ -303,7 +304,7 @@ li a:hover {
 .close_btn:hover{
   background-color: white;
   color: #7d2ae8;
-  transform: scale(1.03);
+  transform: scale(1.05);
 }
 
 @media (max-width:1380px) {
@@ -326,9 +327,6 @@ li a:hover {
   .navbar ul{
     gap: 1.5rem;
   }
-  .projects , .hire_btn , .talk_btn{
-    border: 2px solid #7d2ae8;
-  }
 }
 @media (max-width:1024px) {
   * {
@@ -346,24 +344,61 @@ li a:hover {
     font-size: 10px;
   }
   .talk_btn , .hire_btn , .projects {
-    border: 1.5px solid #7d2ae8;
+    border: 2px solid #7d2ae8;
   }
-}
-@media (max-width:625px) {
-  .right {
-    display: none;
+  .left p {
+    font-size: 1.5rem;
   }
   .left {
     width: 100%;
   }
+  .section {
+    flex-direction: column-reverse;
+  }
+  .right {
+    margin-top: 2rem;
+    width: max-content;
+    border: 2px solid #7d2ae8;
+    border-radius: 50%;
+  }
+  .blog_section {
+    margin-top: 2rem;
+  }
+  .blog_section div {
+    font-size: 1.6rem;
+  }
+  .about_left p{
+    font-size: 1.5rem;
+  }
+}
+@media (max-width:625px) {
+  .left {
+    width: 100%;
+  }
+  .left p{
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+  }
   .content {
     margin-bottom: 3rem;
   }
+  .blog_section div {
+    font-size: 1.5rem;
+  }
+  .about_left p{
+    font-size: 1.6rem;
+  }
   * {
-    font-size: 8px;
+    font-size: 8.5px;
   }
   .talk_btn , .hire_btn , .projects , .submit_btn , .close_btn {
     border: 1px solid #7d2ae8;
+  }
+  .talk_btn , .hire_btn , .projects {
+    padding: 0.55rem 1.6rem;
+  }
+  .hire_btn:hover{
+    transform: scale(1.02);
   }
 }
 @media (max-width:500px) {
@@ -374,6 +409,9 @@ li a:hover {
 @media (max-width:400px) {
   * {
     font-size: 6px;
+  }
+  .talk_form {
+    font-size: 7px;
   }
 }
 .overlay {
