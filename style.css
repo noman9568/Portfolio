@@ -60,7 +60,6 @@ li a:hover {
 .talk_btn:hover{
   background-color: rgb(210, 209, 209);
   color: #7d2ae8;
-  border: 3px solid #7d2ae8;
 }
 .section{
   width: 80%;
@@ -327,7 +326,7 @@ li a:hover {
   .navbar ul{
     gap: 1.5rem;
   }
-  .projects , .hire_btn{
+  .projects , .hire_btn , .talk_btn{
     border: 2px solid #7d2ae8;
   }
 }
@@ -347,10 +346,7 @@ li a:hover {
     font-size: 10px;
   }
   .talk_btn , .hire_btn , .projects {
-    border: 2px solid #7d2ae8;
-  }
-  .projects , .hire_btn{
-    border: 1px solid #7d2ae8;
+    border: 1.5px solid #7d2ae8;
   }
 }
 @media (max-width:625px) {
