@@ -327,6 +327,9 @@ li a:hover {
   .navbar ul{
     gap: 1.5rem;
   }
+  .projects , .hire_btn{
+    border: 2px solid #7d2ae8;
+  }
 }
 @media (max-width:1024px) {
   * {
@@ -345,6 +348,9 @@ li a:hover {
   }
   .talk_btn , .hire_btn , .projects {
     border: 2px solid #7d2ae8;
+  }
+  .projects , .hire_btn{
+    border: 1px solid #7d2ae8;
   }
 }
 @media (max-width:625px) {
