@@ -8,3 +8,5 @@ Clean and responsive design
 Interactive animations for better user experience.
 Developed with a focus on simplicity and performance.
 It's fully responsive and optimized for various screen sizes.
+
+The projects that I have attached are not responsive , they are static and can be seen only on bigger pc.
