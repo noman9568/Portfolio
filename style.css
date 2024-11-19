@@ -76,7 +76,7 @@ li a:hover {
   justify-content: center;
   gap: 1.5rem;
 }
-.left_center{
+.left_center {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -180,11 +180,25 @@ li a:hover {
   text-align: center;
   border: 1px solid #fff;
   outline: 2px solid #7d2ae8;
-  transition: .3s;
+  animation: wiggle 0.8s infinite ease-in-out;
 }
 .social-icons a:hover {
-  transform: translateY(-6px);
-} 
+  animation: none;
+}
+
+@keyframes wiggle {
+  0%, 100% {
+    transform: rotate(0deg);
+    transform: scale(1);
+  }
+  25% {
+    transform: rotate(-15deg);
+  }
+  75% {
+    transform: rotate(15deg);
+    transform: scale(1.07);
+  }
+}
 .social-icons a i {
   color: #ffffff;
   margin: auto auto;
@@ -292,7 +306,7 @@ li a:hover {
 .submit_btn:hover{
   background-color: #7d2ae8;
   color: white;
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 .close_btn{
   background-color: #7d2ae8;
@@ -308,8 +322,16 @@ li a:hover {
 .close_btn:hover{
   background-color: white;
   color: #7d2ae8;
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
+#contactForm input:focus , #contactForm textarea:focus {
+  border: 1px solid #7d2ae8;
+}
+/* .name:focus , .email:focus , .message:focus , .subject:focus {
+  border: 1px solid #7d2ae8;
+} */
+
+
 
 @media (max-width:1380px) {
   .section {
@@ -441,3 +463,84 @@ li a:hover {
   z-index: 999; 
 }
 
+
+.project_container{
+  display: none;
+  width: 80%;
+  margin: 0 auto;
+  flex-direction: column;
+  gap: 1rem;
+  /* justify-content: space-between; */
+}
+.project_container h1{
+  font-size: 2.4rem;
+  color: #7d2ae8;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  padding: 0.5rem;
+}
+.project_box{
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  padding: 0 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  animation: slideInDown 1s ease-out;
+}
+.project img{
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+.project{
+  min-width: 250px;
+  max-width: 25%;
+  /* width: 25rem; */
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 2;
+  flex: 1;
+  align-items: center;
+}
+.udemy{
+  justify-content: center;
+}
+.project h2{
+  font-size: 1.6rem;
+  padding: 0.5rem;
+  color: #555;
+}
+
+@keyframes slideInDown {
+  0% {
+    transform: translateY(-10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width:1380px) {
+  .project_container {
+    width: 90%;
+  }
+  .project h2 {
+    padding: 0.3rem 0;
+  }
+}
+@media (max-width:625px) {
+  .project_container {
+    gap: 5rem;
+  }
+  .project {
+    min-width: 200px;
+  }
+}
