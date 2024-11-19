@@ -41,15 +41,15 @@ talk_form.style.display = 'none';
 document.getElementById('loginOverlay').style.display = 'none';
 }
 
-project_btn.addEventListener('click', project_left);
-function project_left() {
-left.style.display = 'none';
-about_left.style.display = 'none';
-right.style.display = 'none';
-blog_section.style.display = 'none';
-project_container.style.display = 'flex';
-header.style.marginBottom = '1rem';
-}
+// project_btn.addEventListener('click', project_left);
+// function project_left() {
+// left.style.display = 'none';
+// about_left.style.display = 'none';
+// right.style.display = 'none';
+// blog_section.style.display = 'none';
+// project_container.style.display = 'flex';
+// header.style.marginBottom = '1rem';
+// }
 
 let contactForm = document.querySelector('.contact_box');
 let contact1 = document.querySelector('#contact');
